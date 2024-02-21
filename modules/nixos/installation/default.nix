@@ -3,5 +3,8 @@
   imports = [
     ./base.nix
     ./graphical.nix
+    ../../../../home/desktops
+    ../../../../flakes
+    ../../../../modules
   ];
 }
