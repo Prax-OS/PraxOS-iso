@@ -21,6 +21,46 @@
       url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    agenix = { 
+      url = "github:ryantm/agenix";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "hm";
+    };  
+    #provides flakes for specific hardware
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    #universal theming tool
+    stylix = { url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    hyprland.url = "github:hyprwm/Hyprland"; 
+    #adblock and content filtering via DNS
+    hosts.url = "github:StevenBlack/hosts";
+    #Provides the functionality we need to easily switch desktop environments
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+    fu.url = "github:numtide/flake-utils";
+    #Home-Manager allows declarative configuration of config files
+    hm = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    #A wrapper for nix commands, provides more intersting output when rebuilding
+    nh = {
+      url = "github:viperML/nh";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nix-index-db = {
+      url = "github:Mic92/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    #provides nice things like low-latancy audio
+    nix-gaming = {
+      url = "github:fufexan/nix-gaming";
+      inputs.flake-parts.follows = "flake-parts";
+    };
+    helix.url = "github:helix-editor/helix";
   };
 
   outputs = inputs:

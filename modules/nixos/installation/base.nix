@@ -14,7 +14,7 @@
     });
   '';
 
-  boot.kernelPackages = lib.mkForce config.boot.zfs.package.latestCompatibleLinuxPackages;
+ #boot.kernelPackages = lib.mkForce config.boot.zfs.package.latestCompatibleLinuxPackages;
 
   environment.systemPackages = with pkgs; [
     git
