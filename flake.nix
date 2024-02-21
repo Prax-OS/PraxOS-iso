@@ -72,7 +72,7 @@
         nix-data.nixosModules.nix-data
         icicle.nixosModules.icicle
         snowflakeos-modules.nixosModules.gnome
-        snowflakeos-modules.nixosModules.kernel
+        #snowflakeos-modules.nixosModules.kernel
         snowflakeos-modules.nixosModules.networking
         snowflakeos-modules.nixosModules.pipewire
         snowflakeos-modules.nixosModules.printing
