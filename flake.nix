@@ -65,7 +65,7 @@
 
   outputs = inputs:
     inputs.snowfall-lib.mkFlake rec {
-      inherit inputs;
+      inherit inputs sel;
       channels-config.allowUnfree = true;
 
       systems.modules.nixos = with inputs; [
