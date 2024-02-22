@@ -14,7 +14,7 @@
     });
   '';
 
-  boot.kernelPackages = lib.mkForce config.boot.zfs.package.latestCompatibleLinuxPackages;
+ #boot.kernelPackages = lib.mkForce config.boot.zfs.package.latestCompatibleLinuxPackages;
 
   environment.systemPackages = with pkgs; [
     git
@@ -28,11 +28,11 @@
 
   i18n.supportedLocales = [ "all" ];
 
-  networking.hostName = "snowflakeos";
+  networking.hostName = "praxos";
   networking.wireless.enable = false;
 
   users.users = {
-    snowflake = {
+    cmde = {
       isNormalUser = true;
       extraGroups = [ "wheel" "networkmanager" "video" ];
       # Allow the graphical user to login without password

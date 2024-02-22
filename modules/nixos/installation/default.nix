@@ -1,7 +1,8 @@
-{ pkgs, config, lib, inputs, system, ... }:
+{ self, pkgs, config, lib, inputs, system,  ... }:
 {
   imports = [
     ./base.nix
     ./graphical.nix
+
   ];
 }
